@@ -1,0 +1,27 @@
+<div mat-dialog-content class="custom-container">
+    <h1 mat-dialog-title>Create an apartment</h1>
+    <mat-form-field>
+        <input matInput [(ngModel)]="data.title" placeholder="Title">
+    </mat-form-field>
+
+    <mat-form-field>
+        <textarea matInput [(ngModel)]="data.address" placeholder="Address"></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-select [(ngModel)]="data.nbOfRooms" placeholder="No. of rooms">
+            <mat-option value="1">1</mat-option>
+            <mat-option value="2">2</mat-option>
+            <mat-option value="3">3</mat-option>
+            <mat-option value="4">4</mat-option>
+            <mat-option value="5">5</mat-option>
+            <mat-option value="6">6</mat-option>
+            <mat-option value="7">7</mat-option>
+            <mat-option value="8">8</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <div mat-dialog-actions>
+        <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Create</button>
+        <button mat-button (click)="onNoClick()">Cancel</button>
+    </div>
+</div>

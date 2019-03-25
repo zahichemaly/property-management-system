@@ -1,0 +1,6 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body{
+    background-image: url("imgs/wallpaper.jpg");
+    background-size: cover;
+}

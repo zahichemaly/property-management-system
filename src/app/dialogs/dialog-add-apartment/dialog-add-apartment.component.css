@@ -1,0 +1,17 @@
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+  }
+
+  .button-container{
+      display: inline-flex;
+      flex-direction: row;
+  }
+
+  button.createButton{
+    background-color: lightgreen;
+}
+  

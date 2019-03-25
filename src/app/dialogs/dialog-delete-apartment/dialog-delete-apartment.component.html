@@ -1,0 +1,7 @@
+<div mat-dialog-content class="custom-container">
+    <h1 mat-dialog-title>Delete apartment "{{ data.title }}"?</h1>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onSubmit()" cdkFocusInitial>Yes</button>
+        <button mat-button (click)="onNoClick()">Cancel</button>
+    </div>
+</div>

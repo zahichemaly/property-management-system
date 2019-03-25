@@ -1,0 +1,15 @@
+<div mat-dialog-content class="custom-container">
+    <h1 mat-dialog-title>Buy apartment</h1>
+
+    <mat-form-field>
+        <mat-select [(ngModel)]="buyerSelected" placeholder="Buyer's info" (change)="buyerSelection($event.value)">
+            <mat-option *ngFor="let buyer of buyersData" [value]="buyer">
+              {{ buyer.fullName }} (ID: {{ buyer.id }})
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onSubmit()">Submit</button>
+        <button mat-button (click)="onNoClick()">Cancel</button>
+    </div>
+</div>

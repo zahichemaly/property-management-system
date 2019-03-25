@@ -1,0 +1,14 @@
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\bin\Debug\netcoreapp2.1\PropertyManagementAPI.deps.json
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\bin\Debug\netcoreapp2.1\PropertyManagementAPI.runtimeconfig.json
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\bin\Debug\netcoreapp2.1\PropertyManagementAPI.runtimeconfig.dev.json
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\bin\Debug\netcoreapp2.1\PropertyManagementAPI.dll
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\bin\Debug\netcoreapp2.1\PropertyManagementAPI.pdb
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\obj\Debug\netcoreapp2.1\PropertyManagementAPI.csprojAssemblyReference.cache
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\obj\Debug\netcoreapp2.1\PropertyManagementAPI.csproj.CoreCompileInputs.cache
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\obj\Debug\netcoreapp2.1\PropertyManagementAPI.AssemblyInfoInputs.cache
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\obj\Debug\netcoreapp2.1\PropertyManagementAPI.AssemblyInfo.cs
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\obj\Debug\netcoreapp2.1\PropertyManagementAPI.dll
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\obj\Debug\netcoreapp2.1\PropertyManagementAPI.pdb
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\obj\Debug\netcoreapp2.1\PropertyManagementAPI.RazorAssemblyInfo.cache
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\obj\Debug\netcoreapp2.1\PropertyManagementAPI.RazorAssemblyInfo.cs
+C:\Users\Zahi\source\repos\PropertyManagementAPI\PropertyManagementAPI\obj\Debug\netcoreapp2.1\PropertyManagementAPI.RazorTargetAssemblyInfo.cache

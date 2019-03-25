@@ -1,0 +1,20 @@
+<mat-card class="apartment-card" *ngIf="apartment">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ apartment.title}}</mat-card-title>
+      <mat-card-subtitle>ID: {{ apartment.id}} </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+          <mat-list>
+              <mat-list-item>Address: {{ apartment.address }}</mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>No. of rooms: {{ apartment.nbOfRooms }} </mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>Price: ${{ apartment.price }} </mat-list-item>
+              <mat-divider></mat-divider>
+            </mat-list>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button (click)="goBack()">Go back</button>
+    </mat-card-actions>
+  </mat-card>

@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="title"> Property Management System </div>
+    <br>
+    <br>
+    <div class="col-md-8">
+        <app-list-apartments [apartmentData]="apartmentData" [apartmentInfo]="currentApartment"
+            (apartmentUpdated)="createOrUpdateApartment($event)">
+        </app-list-apartments>
+    </div>
+    <br>
+    <div class="col-md-8">
+        <app-add-apartment (apartmentCreated)="createOrUpdateApartment($event)"></app-add-apartment>
+    </div>
+</div>

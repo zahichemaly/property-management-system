@@ -1,0 +1,19 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  button.createButton{
+    background-color: lightgreen;
+    width: 100px;
+}
+
+:host {
+  position: absolute;
+  top: 270px;
+  right: 380px;
+} 

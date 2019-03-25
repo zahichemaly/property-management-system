@@ -1,0 +1,89 @@
+<mat-card class="search-card">
+
+    <mat-form-field class="search-form">
+        <input [(ngModel)]="searchAddress" matInput placeholder="Search address">
+    </mat-form-field>
+
+    <mat-form-field class="search-form">
+        <mat-select [(ngModel)]="searchNbOfRooms" placeholder="Search no. of rooms">
+            <mat-option value="1">1</mat-option>
+            <mat-option value="2">2</mat-option>
+            <mat-option value="3">3</mat-option>
+            <mat-option value="4">4</mat-option>
+            <mat-option value="5">5</mat-option>
+            <mat-option value="6">6</mat-option>
+            <mat-option value="7">7</mat-option>
+            <mat-option value="8">8</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="search-form">
+        <input [(ngModel)]="searchPriceFrom" matInput placeholder="Search price from">
+    </mat-form-field>
+
+    <mat-form-field class="search-form">
+        <input [(ngModel)]="searchPriceTo" matInput placeholder="Search price to">
+    </mat-form-field>
+
+</mat-card>
+
+<br>
+
+<mat-card class="table-card">
+    <mat-card-header>
+        <mat-card-title>Available apartments</mat-card-title>
+    </mat-card-header>
+    <table class="custom-table" mat-table [dataSource]="dataSource
+     | filterAddress: searchAddress
+     | filterRooms: searchNbOfRooms
+     | filterPriceFrom: searchPriceFrom
+     | filterPriceTo: searchPriceTo">
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> ID </th>
+            <td mat-cell *matCellDef="let apartment"> {{apartment.id}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef> Title </th>
+            <td mat-cell *matCellDef="let apartment">
+                <a routerLink="/apartment/{{apartment.id}}"> {{ apartment.title }} </a>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="address">
+            <th mat-header-cell *matHeaderCellDef> Address </th>
+            <td mat-cell *matCellDef="let apartment"> {{apartment.address}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="nbOfRooms">
+            <th mat-header-cell *matHeaderCellDef> No. of rooms </th>
+            <td mat-cell *matCellDef="let apartment"> {{apartment.nbOfRooms}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="price">
+            <th mat-header-cell *matHeaderCellDef> Price </th>
+            <td mat-cell *matCellDef="let apartment"> ${{apartment.price}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef></th>
+            <td mat-cell *matCellDef="let apartment">
+                <button mat-raised-button class="editButton" (click)="openEditDialog(apartment)">Edit</button>
+                &nbsp;
+                <button mat-raised-button class="deleteButton" (click)="openDeleteDialog(apartment)">Delete</button>
+                &nbsp;
+                <button mat-raised-button [disabled]="apartment.buyerId != null" class="purchaseButton"
+                    (click)="openBuyDialog(apartment)">Purchase</button>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+        <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
+
+    </table>
+
+    <mat-paginator class="customPaginator" [length]="totalSize" [pageIndex]="currentPage" [pageSize]="pageSize"
+        [pageSizeOptions]="pageSizeOptions" hidePageSize=false>
+    </mat-paginator>
+
+</mat-card>
