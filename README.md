@@ -39,12 +39,12 @@ ng serve
 
 Here's a list of API calls we can test using POSTMAN for example:
 
-..* Apartments
+⋅⋅* Apartments
 
 | METHOD   | URL                                                                               |
 |:--------:|:--------------------------------------------------------------------------------- |
-| GET      | [http:localhost:5000/apartments]                                                    | 
-| GET      | [http:localhost:5000/apartments/{id}]                                               |
+| GET      | http:localhost:5000/apartments                                                    | 
+| GET      | http:localhost:5000/apartments/{id}                                               |
 | GET      | http:localhost:5000/apartments?address=New York                                   |
 | GET      | http:localhost:5000/apartments?address=New York&priceFrom=1000&priceTo=50000      |
 | GET      | http:localhost:5000/apartments?pageSize=5&pageNumber=2                            |
@@ -54,7 +54,7 @@ Here's a list of API calls we can test using POSTMAN for example:
 |          | { "title": "AP 2", "address": "New York", "nbOfRooms": 2, "price": 5000 }         |
 | DELETE   | http:localhost:5000/apartments/{id}                                               |
 
-..* Buyers
+⋅⋅* Buyers
 
 | METHOD   | URL                                                                               |
 |:--------:|:--------------------------------------------------------------------------------- |
