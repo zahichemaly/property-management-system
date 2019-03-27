@@ -5,6 +5,7 @@
 *This is a tutorial of some sort containing an Angular Application that consumes a REST API service written using ASP.NET Core in Property Management System scenario. Users can create, edit, update and delete apartments by calling the API service via Angular. Additional features:*
 
 *- Filter apartments based on price (From -> To), address etc...*
+
 *- Support for paging (+ API call to fetcha specific page of apartments, i.e by page number and page size)*
 
 *Since this project is for demonstrations purposes and nothing else, authentication has not been implemented.*
@@ -41,9 +42,9 @@ Here's a list of API calls we can test using POSTMAN for example:
 ..* Apartments
 
 | METHOD   | URL                                                                               |
-| -------- |:---------------------------------------------------------------------------------:|
-| GET      | http:localhost:5000/apartments                                                    | 
-| GET      | http:localhost:5000/apartments/{id}                                               |
+|:--------:|:--------------------------------------------------------------------------------- |
+| GET      | [http:localhost:5000/apartments]                                                    | 
+| GET      | [http:localhost:5000/apartments/{id}]                                               |
 | GET      | http:localhost:5000/apartments?address=New York                                   |
 | GET      | http:localhost:5000/apartments?address=New York&priceFrom=1000&priceTo=50000      |
 | GET      | http:localhost:5000/apartments?pageSize=5&pageNumber=2                            |
@@ -56,7 +57,7 @@ Here's a list of API calls we can test using POSTMAN for example:
 ..* Buyers
 
 | METHOD   | URL                                                                               |
-| -------- |:---------------------------------------------------------------------------------:|
+|:--------:|:--------------------------------------------------------------------------------- |
 | GET      | http:localhost:5000/buyers                                                        | 
 | GET      | http:localhost:5000/buyers/{id}                                                   |
 | GET      | http:localhost:5000/buyers/{id}/apartments                                        |            
