@@ -20,9 +20,7 @@ Since this project is for demonstrations purposes and nothing else, authenticati
 npm install
 ```
 
-2. Open and run PropertyManagement/PropertyManagementAPI.sln 
-
-The server runs on http://localhost:5000 by default.
+2. Open and run `PropertyManagement/PropertyManagementAPI.sln`. The server runs on http://localhost:5000 by default.
 
 3. Finally, test the Angular app locally:
 
